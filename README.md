@@ -1,4 +1,4 @@
-<img src="https://github.com/ISQ-BOTS/mailru_im_async_bot/logo.png" width="100" height="100">
+<img src="https://github.com/ICQ-BOTS/mailru_im_async_bot/blob/main/logo.png" width="100" height="100">
 
 # Mailru im async bot
  
