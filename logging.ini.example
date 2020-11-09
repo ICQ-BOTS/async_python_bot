@@ -1,0 +1,28 @@
+[formatters]
+keys = formatter
+
+[formatter_formatter]
+format = [%(asctime)s,%(msecs)d] %(levelname)s (%(name)s) (%(filename)s#%(funcName)s:%(lineno)s): %(message)s
+datefmt = %Y.%m.%d %H:%M:%S
+
+[handlers]
+keys = console,file
+
+[handler_console]
+class = StreamHandler
+level = INFO
+formatter = formatter
+args = (sys.stdout,)
+
+[handler_file]
+class = mailru_im_async_bot.util.DynamicRotatingFileHandler
+level = INFO
+formatter = formatter
+args = ("/tmp/bots/.log",)
+
+[loggers]
+keys = root
+
+[logger_root]
+level = INFO
+handlers = console,file

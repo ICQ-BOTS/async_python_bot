@@ -1,0 +1,7 @@
+[icq_bot]
+token=***.**********.**********:*********
+owner=*********
+poll_time_s=300
+task_timeout_s=60
+request_timeout_s=7
+task_max_len=1000000000
