@@ -5,11 +5,11 @@
 Асинхронная библиотека Python для BOT API
 
 # Оглавление 
- - [Установка](#)
- - [Api](#)
- - [Настройка](#)
- - [БД Tarantool](#)
- - [Документация](#)
+ - [Установка](https://github.com/ICQ-BOTS/mailru_im_async_bot#установка)
+ - [Api](https://github.com/ICQ-BOTS/mailru_im_async_bot#api)
+ - [Настройка](https://github.com/ICQ-BOTS/mailru_im_async_bot#настройка)
+ - [БД Tarantool](https://github.com/ICQ-BOTS/mailru_im_async_bot#бд-tarantool)
+ - [Документация](https://github.com/ICQ-BOTS/mailru_im_async_bot#документация-по-библиотеке)
  
 # Установка 
 
@@ -36,6 +36,6 @@ python setup.py install
 
 # Документация по библиотеке
  
-* [Class Bot](#)
-* [Class hamdler](#)
-* [Class Filter](#)
+* [Class Bot](https://github.com/ICQ-BOTS/mailru_im_async_bot/blob/main/doc/Class%20bot.md)
+* [Class handler](https://github.com/ICQ-BOTS/mailru_im_async_bot/blob/main/doc/Class%20handler.md)
+* [Class Filter](https://github.com/ICQ-BOTS/mailru_im_async_bot/blob/main/doc/Class%20Filter.md)
