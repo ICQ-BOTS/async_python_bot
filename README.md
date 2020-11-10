@@ -1,4 +1,4 @@
-<img src="https://github.com/ISQ-BOTS/mailru_im_async_bot/blob/master/logo.png" width="100" height="100">
+<img src="https://github.com/ICQ-BOTS/mailru_im_async_bot/blob/main/logo.png" width="100" height="100">
 
 # Mailru im async bot
  
@@ -426,8 +426,13 @@ await get_file_info(chat_id, file_id)
 
 ## BotButtonCommandHandler(callback=None, filters=None, multiline=False, ignore=None)
 Обработчик кнопок
-Параметры:
-* callback - фукнцию которую вызывает хендлер.
-* filters - Фильтр.
-* multiline - Обработчик многострочных команд.На вход функция получит помимо (bot, event) объект user, через который можно ожидать следующий ответ пользователя.
-* ignore - настройка приоритетов команд, на вход получает хендле
+<details> 
+  <summary>Параметры</summary>
+   <ul>
+    <li>callback - фукнцию которую вызывает хендлер.</li>
+    <li>filters - Фильтр.</li>
+     <li>multiline - Обработчик многострочных команд.На вход функция получит помимо (bot, event) объект user, через который можно ожидать следующий ответ пользователя.</li>
+    <li>ignore - настройка приоритетов команд, на вход получает хендле</li>
+    </ul>
+</details>
+
