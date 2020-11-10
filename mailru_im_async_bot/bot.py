@@ -438,3 +438,18 @@ class Bot:
                 "members": json.dumps([{"sn": m} for m in members])
             }
         )
+
+    async def set_chat_avatar(self, chat_id, file):
+        data = None
+        if file:
+            data = FormData()
+            data.add_field('image', file)
+            
+        return await self._post(
+            url="{}/chats/avatar/set".format(self.api_base_url),
+            params={
+                "token": self.token,
+                "chatId": chat_id
+            },
+            data=data
+        )
