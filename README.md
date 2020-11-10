@@ -9,12 +9,10 @@
  - [Api](#)
  - [Настройка](#)
  - [БД Tarantool](#)
- - [Документация](#)
- - - [self](#)
- - - [messages](#)
- - - [chats](#)
- - - [files](#)
-
+ - [Class Bot](#)
+ - [Class hendler](#)
+ - [Class Filter](#)
+ 
 # Установка 
 
 ```bash
@@ -427,6 +425,7 @@ await get_file_info(chat_id, file_id)
 ## BotButtonCommandHandler(callback=None, filters=None, multiline=False, ignore=None)
 Обработчик кнопок
 <details> 
+<<<<<<< Updated upstream
   <summary>Параметры</summary>
    <ul>
     <li>callback - фукнцию которую вызывает хендлер.</li>
@@ -436,3 +435,79 @@ await get_file_info(chat_id, file_id)
     </ul>
 </details>
 
+=======
+    <summary>Параметры</summary>
+    <ul>
+        <li>callback - фукнцию которую вызывает хендлер.</li>
+        <li>filters - Фильтр.</li>
+        <li>multiline - Обработчик многострочных команд.На вход функция получит помимо (bot, event) объект user, через который можно ожидать следующий ответ пользователя.</li>
+        <li>ignore - настройка приоритетов команд, на вход получает хендле</li>
+    </ul>
+</details>
+
+# Class Filter
+## message
+Филтр сообщения
+## command
+Фильр команд
+## file
+Фильтр файлов
+## image
+Фильтр изображений
+## video
+Фильтр видео
+## audio
+Фильтр аудио
+## voice
+Фильтр голосовых сообщений
+## media
+Фильтр медиа файлов (image, video, audio, voice)
+## sticker
+Фильтр стикеров
+## url
+URL фильтр
+## text_only
+Фильтр текстовых сообщений, не (command, sticker, file, url)
+## text(list)
+Фильтр сообщения по тексту
+```python
+bot.dispatcher.add_handler(
+    MessageHandler(
+        callback=hello,
+        filters=Filter.text(['Ghbdtn', 'Привет', 'Прив', 'Хай'])
+    )
+)
+```
+
+## regexp(regular)
+Фильтр сообщения по тексту
+Параметры:
+* regular - регулярное выражение
+```python
+bot.dispatcher.add_handler(MessageHandler(
+                            callback=hello, 
+                            filters=Filter.regexp('(?i)^(привет|хай)')
+                        )
+                    )
+```
+## mention(user_id=None)
+Упоминание пользователей
+Параметры:
+* user_id - id на который будет срабатывать
+
+## forward
+Фильтр пересылания сообщения
+
+## reply
+Фильтр ответа на сообщения
+
+## callback_data(callback_data)
+Фильтр кнопок
+Параметры:
+* callback_data - callbackData
+
+## callback_data_regexp(regular)
+Фильтр кнопок с регуляторным выражением
+Параметры:
+* regular - регулярное выражение
+>>>>>>> Stashed changes
