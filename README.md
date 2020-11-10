@@ -20,10 +20,8 @@ python setup.py install
 ```
 
 # API
-<ul>
-    <li><a href="https://icq.com/botapi/">icq.com/botapi/</a></li>
-    <li><a href="https://agent.mail.ru/botapi/">agent.mail.ru/botapi/</a></li>
-</ul>
+* [icq.com/botapi](https://icq.com/botapi/)
+* [agent.mail.ru/botapi](https://agent.mail.ru/botapi/)
 
 
 # Настройка
