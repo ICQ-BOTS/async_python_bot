@@ -20,7 +20,7 @@ def requirements():
 
 setup(
     name="mailru_im_async_bot",
-    version=bot.__version__,
+    version="0.1",
     description="Asynchronous Python BOT API library.",
     long_description=long_description(),
     long_description_content_type="text/markdown",
