@@ -14,7 +14,7 @@
 # Установка 
 
 ```bash
-git clone https://github.com/ISQ-BOTS/mailru_im_async_bot.git
+git clone https://github.com/ICQ-BOTS/mailru_im_async_bot.git
 cd mailru_im_async_bot
 python setup.py install
 ```

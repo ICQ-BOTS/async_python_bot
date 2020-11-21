@@ -1,9 +1,6 @@
 import io
 from os import path
-
 from setuptools import setup, find_packages
-
-import bot
 
 here = path.abspath(path.dirname(__file__))
 
