@@ -2,7 +2,7 @@
 
 # Mailru im async bot
  
-Асинхронная библиотека Python для BOT API
+Асинхронная библиотека Python для bot API
 
 # Оглавление 
  - [Установка](https://github.com/ICQ-BOTS/mailru_im_async_bot#установка)
