@@ -1,9 +1,5 @@
 <img src="https://github.com/ICQ-BOTS/mailru_im_async_bot/blob/main/logo.png" width="100" height="100">
 
-# Mailru im async bot
- 
-Асинхронная библиотека Python для bot API
-
 # Оглавление 
  - [Установка](https://github.com/ICQ-BOTS/mailru_im_async_bot#установка)
  - [Api](https://github.com/ICQ-BOTS/mailru_im_async_bot#api)
